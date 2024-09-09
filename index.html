@@ -11,21 +11,31 @@
     />
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
 
 </head>
 <body>
     <div class="background-image">
     <header class="header">
         <a href="#home" class="logo">
-        <span> Stella Sposito</span></i></a>
+        <span> Stella Sposito</span></a>
         
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <a href="#education">Education</a>
-            <a href="#experiences">Experiences</a>
+            <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -34,101 +44,33 @@
 
     <section class="home" id="home">
         <div class="home-content">
-           <h1>I'm <span class="shine">Stella</span><i class='bx bxs-star'></i></h1>
-           <h3>Data Scientist <span></span></h3>
-           <p>My name defines a lot of who I am. I like to behave like a star in the solar system: with intensity, brightness and authenticity. I learned to be a Scientist when I graduated in Biology, discovering my critical, researching and questioning side. I learned to be a Data Scientist in my postgraduate studies, where I realized that I could use my scientist side to look at analyses with different eyes, and obtain important information through data. </p>
+        <h1><span class="shine">Stella Sposito</span></h1>
+           <h3>Data Scientist</h3>
+
+        <div class="typing-container">
+            <span id="typed-text"></span>
+            <span class="cursor">|</span>
+        </div>
+    
+        <script src="script.js"></script>
            
-           <div class="typing-container">
-                <span id="typed-text"></span>
-                <span class="cursor">|</span>
-            </div>
-
-            <script src="script.js"></script> 
-
            <div class="social-icons">
                 <a href="https://www.linkedin.com/in/stellasposito/" target="_blank"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/stellasposito" target="_blank"><i class='bx bxl-github' ></i></a>
                 <a href="https://www.instagram.com/stellasposito_/" target="_blank"><i class='bx bxl-instagram'></i></a>
             </div>
 
-        </div>
-            <div class="home-img">
+       
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="heading">About</h2>
+     
+        <div class="about-content">
+            <div class="about-img">
                 <img src="stella.png" alt="">
-            </div>   
-    </section>
-
-    <section class="education" id="education">
-        <h2 class="heading">Education</h2>
-        
-        <div class="education-container">
-            <div class="education-block">
-                <h3>Lato Sensu Post-Graduation in Data Sciences</h3>
-                <h4>Faculty of Engineering of Sorocaba – FACENS | 2022-2024</h4>
-                <p> In this postgraduate course, I specialized in Data Science, learning the theory and practice of Machine Learning, Deep Learning and Big Data. My final project was developed focusing on NLP and Machine Learning models such as Random Forest and SVM.</p>
-            </div>
-            <div class="education-block">
-                <h3>BSc in Biological Sciences</h3>
-                <h4>Federal University of São Carlos – UFSCAR | 2017 - 2020</h4>
-                <p>During my undergraduate studies, I had my first experiences as a teacher and as a scientist. I did my scientific initiation project with exploratory and statistical analysis in R.</p>
-                <p>Click <a href="https://onlinelibrary.wiley.com/doi/10.1111/aec.13222" target="_blank" class="paper-link">HERE</a> to read my full paper.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="experiences" id="experiences">
-        <h2 class="heading">Experiences</h2>
-        
-        <div class="timeline-items">
-            
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2018
-                        <div class="timeline-content">
-                            <h3> Grammar Teacher and Pedagogical Coordinator </h3>
-                            <p> Teacher and Pedagogical Coordinator at CEC – Education and Citizenship Course in UFSCar Sorocaba since 2018 until 
-                                2020. I initially worked as a Grammar teacher, and then participated in the 
-                                coordination helping other teachers, and organizing the proper functioning and development of the course. </p>
-                        </div>
-                    </div>  
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2019
-                        <div class="timeline-content">
-                            <h3> Undergraduate Researcher and Data Analyst </h3>
-                            <p> I did my research at Laboratory of Theoretical Ecology in UFSCar Sorocaba wich started in 2019 and finished in 2020. 
-                                In this process, I learned how to perform Exploratory Analysis and Statistical Data Manipulation.
-                                The research entitled: "Temporal resource partitioning and stochastic colonization explain the co-occurrence of gall-inducing insects in the super-host plant Copaifera langsdorffii Desf. (Fabaceae)"", was published in the journal Austral Ecology.
-                                After publication in the journal, I presented my paper at the international symposium: 2nd Symposium on the Biology of Galls 2020.</p>
-                        </div>
-                    </div>  
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2021
-                        <div class="timeline-content">
-                            <h3> Biology and Science Teacher </h3>
-                            <p> I worked in a school (Maxximus School) as a Biology and Science teacher and I was responsible for preparing students for national exams and university entrance, awakening their interest in science, offering individualized support to students with difficulties, and encouraging them to develop scientifically </p>
-                        </div>
-                    </div>  
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2022
-                        <div class="timeline-content">
-                            <h3> Science and Technology Teacher </h3>
-                            <p> I started my work as Science and Technology Teacher for the Government of the State of São Paulo in 2022 and I'm still working here.
-                                I teach basic programming in the discipline of Technology using intuitive and didactic codes with the SCRATCH and Python platform, facilitating the understanding and application of Machine Learning technological concepts. This focus not only improves students ability to adapt to the university environment and the job market, but also fosters a deeper understanding of science and technology, preparing them to face future challenges.
-
-                            </p>
-                        </div>
-                    </div>  
-            </div>
-
-
+            </div>  
+            <p>My name defines a lot of who I am. I like to behave like a star in the solar system: with intensity, brightness and authenticity. I learned to be a Scientist when I graduated in Biology, discovering my critical, researching and questioning side. I learned to be a Data Scientist in my postgraduate studies, where I realized that I could use my scientist side to look at analyses with different eyes, and obtain important information through data.</p>
         </div>
     </section>
 
