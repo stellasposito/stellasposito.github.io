@@ -14,7 +14,6 @@
     --text-color: rgb(231, 221, 231);
     --main-color: #ff00b3c2;
 }
-
 html{
     font-size: 60%;
     overflow-x: hidden;
@@ -22,20 +21,6 @@ html{
 body{
     background: var(--bg-color);
     color: var(--text-color);
-
-}
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 4rem 12% 4rem;
-    background: #2c2c2c;
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 5;
 }
 .logo{
     font-size: 3rem;
@@ -68,7 +53,6 @@ body{
     color: var(--main-color);
     display: none;
 }
-
 section{
     min-height: 100vh;
     padding: 10rem 12% 10rem;
@@ -77,14 +61,16 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Ocupa a altura total da viewport */
-    text-align: center; /* Centraliza o texto */
-    flex-direction: column; /* Coloca o conteúdo verticalmente */
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
     gap: 15rem;
-    background-image: url('stars.jpg'); /* Substitua com o caminho da sua imagem */
-    background-size: cover; /* Faz com que a imagem cubra toda a área */
-    background-position: center; /* Centraliza a imagem */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)), url('stars.png'); /* Gradiente + Imagem */
+    background-size: cover;
+    background-position: center;
     position: relative;
+    background-attachment: fixed;
+    padding: 8rem 12% 10rem; 
 }
 .home::before {
     content: '';
@@ -93,8 +79,8 @@ section{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(26, 25, 25, 0.5); /* Define a transparência (altere os valores do rgba) */
-    z-index: 1; /* Coloca a camada abaixo do conteúdo */
+    background-color: rgba(26, 25, 25, 0.5); /* Mantém a camada de transparência */
+    z-index: 1;
 }
 .home-content{
     display: flex;
@@ -109,9 +95,18 @@ section{
 span{
     color: var(--main-color);
 }
-.logo span{
-   color: var(--main-color); 
+.logo {
+    font-size: 3rem; /* Ajuste o tamanho para STELLA */
+    font-family: 'Teko', sans-serif; /* Usa a mesma fonte */
+    color: white; /* "STELLA" branco */
+    font-weight: 300;
 }
+.logo span{
+   color: var(--main-color);
+   font-family: 'Teko', sans-serif; 
+   font-size: 3rem; 
+}
+
 .shine {
     font-family: 'Roboto', cursive; /* Ou qualquer outra fonte */
     font-size: 7rem;
@@ -142,7 +137,6 @@ span{
     align-items: center;
     padding: 2rem; /* Ajuste conforme necessário */
 }
-
 .about-content {
     display: flex;
     align-items: center; /* Alinha verticalmente no centro */
@@ -153,7 +147,6 @@ span{
     position: relative;
     z-index: 2;
 }
-
 .about-content p {
     margin-bottom: 2rem;
     margin-top: 1rem;
@@ -162,13 +155,11 @@ span{
     max-width: 600px; /* Limita a largura do texto para evitar que fique muito largo */
     text-align: left; /* Ajusta o alinhamento do texto */
 }
-
 .about-img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .about-img img {
     width: 32vw;
     border-radius: 50%;
@@ -252,13 +243,12 @@ span{
     align-items: center;
     z-index: 5;
 }
-.home {
-    padding: 8rem 12% 10rem; 
-}
 .heading {
-    font-size: 4rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text-color);
     text-align: center;
-    margin: 5rem 0;
+    margin-bottom: 2rem;
 }
 ::-webkit-scrollbar {
     width: 5px;
@@ -373,7 +363,7 @@ span{
     opacity: 1; /* Exibe as informações do projeto ao passar o mouse */
 }
 .contact {
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
 }
 
 .contact h2 {
@@ -503,4 +493,10 @@ span{
 
 .paper-link:hover {
     color: var(--main-color); /* Muda a cor do link ao passar o mouse */
+}
+section {
+    scroll-margin-top: 7rem; 
+}
+.about, .projects, .contact {
+    padding-top: 3rem; 
 }
