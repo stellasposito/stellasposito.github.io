@@ -137,22 +137,23 @@ span{
     align-items: center;
     padding: 2rem; /* Ajuste conforme necessário */
 }
-.about-content {
+.about-content{
     display: flex;
     align-items: center; /* Alinha verticalmente no centro */
     justify-content: center; /* Opcional, centraliza horizontalmente */
     gap: 2rem; /* Espaço entre a imagem e o texto */
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
     position: relative;
     z-index: 2;
+}
+.about-text {
+    max-width: 600px;
 }
 .about-content p {
     margin-bottom: 2rem;
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 300;
-    max-width: 600px; /* Limita a largura do texto para evitar que fique muito largo */
     text-align: left; /* Ajusta o alinhamento do texto */
 }
 .about-img {
@@ -161,7 +162,9 @@ span{
     align-items: center;
 }
 .about-img img {
-    width: 32vw;
+    width: 430%;
+    max-width: 430px;
+    height: auto;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
@@ -500,3 +503,127 @@ section {
 .about, .projects, .contact {
     padding-top: 3rem; 
 }
+
+@media screen and (max-width: 767px){
+    #menu-icon {
+        display: block; /* Mostra o ícone do menu */
+    }
+    .about-img img{
+        width: 90%;
+    }
+    .about-content p {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: 300;
+        text-align: justify;
+    }
+    .services-container {
+        display: grid; /* Mantenha o grid para a versão mobile */
+        grid-template-columns: 1fr; /* Uma coluna na versão mobile */
+        gap: 1.5rem; /* Espaço entre as caixas */
+    }
+
+    .service-box {
+        height: auto; /* Ajuste a altura ao conteúdo */
+        border-radius: 1.5rem; /* Bordas arredondadas */
+        padding: 1rem; /* Espaço interno */
+        position: relative;
+        transition: none; /* Remove transições */
+    }
+
+    .service-box img {
+        width: 100%; /* Imagem ocupa toda a largura */
+        height: auto; /* Altura ajusta automaticamente */
+        border-radius: 1.5rem; /* Bordas arredondadas para as imagens */
+        object-fit: cover; /* Cobre o espaço disponível */
+    }
+
+    /* Remover informações de serviço ao passar o mouse */
+    .service-info {
+        display: none; /* Remove a exibição da caixa de informações no mobile */
+    }
+
+    /* Exibe título e texto sempre */
+    .service-box h4 {
+        text-align: center; /* Centraliza o título */
+        font-size: 1.8rem; /* Tamanho do título */
+        margin: 0.5rem 0; /* Espaçamento */
+    }
+
+    .service-box p {
+        text-align: center; /* Centraliza o texto */
+        font-size: 1.4rem; /* Tamanho do texto */
+        margin: 0.5rem 0; /* Espaçamento */
+    }
+    
+    /* Remove os efeitos de hover na versão mobile */
+    .service-box:hover {
+        background: none; /* Remove fundo ao passar o mouse */
+        border: none; /* Remove borda ao passar o mouse */
+        transform: none; /* Remove transformação ao passar o mouse */
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .navbar{
+        display: none
+    }
+    
+}
+@media (min-width: 769px) {
+    #menu-icon {
+        display: none; /* Oculta o ícone do menu na versão desktop */
+    }
+
+    .navbar {
+        display: block; /* Mostra a navbar na versão desktop */
+    }
+}
+/* Esconde o ícone do menu quando o menu está ativo */
+.menu-mobile.active ~ #menu-icon {
+    display: none; /* Esconde o ícone de menu quando o menu está aberto */
+}
+
+/* Estilo para o menu mobile */
+.menu-mobile {
+    display: none; /* Inicialmente escondido */
+}
+
+/* Estilo quando o menu está ativo */
+.menu-mobile.active {
+    display: block; /* Mostra o menu quando ativo */
+    position: fixed; /* Fica fixo na tela */
+    top: 0; /* Começa no topo */
+    right: 0; /* Alinha à direita */
+    width: 300px; /* Largura do menu */
+    height: 100%; /* Ocupa a tela toda */
+    background-color: rgba(26, 25, 25, 0.5); /* Mantém a camada de transparência */
+    color: white; /* Cor do texto */
+    z-index: 1000; /* Fica na frente de outros elementos */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo para o botão de fechar */
+.btn-fechar {
+    cursor: pointer; /* Indica que é clicável */
+    font-size: 24px; /* Tamanho do ícone de fechar */
+    margin-bottom: 20px; /* Espaçamento abaixo do botão de fechar */
+}
+
+/* Estilo para o menu */
+.menu-mobile nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding */
+}
+
+.menu-mobile nav ul li {
+    margin: 10px 0; /* Espaçamento entre os itens do menu */
+}
+
+.menu-mobile nav ul li a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+}
+

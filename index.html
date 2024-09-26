@@ -4,67 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stella Sposito</title>
-    <link
-      rel="shortcut icon"
-      href="favicon.png"
-      type="image/png"
-    />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="background-image">
-    <header class="header">
-        <a href="#home" class="logo">
-            STELLA<span>SPOSITO</span>
-        </a>
-        
-        <i class='bx bx-menu' id="menu-icon"></i>
+        <header class="header">
+            <a href="#home" class="logo">
+                STELLA<span>SPOSITO</span>
+            </a>
+            
+            <i class='bx bx-menu' id="menu-icon"></i>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-</div>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Menu Mobile -->
+        <div class="menu-mobile">
+            <div class="btn-fechar">
+                <i class='bx bx-x'></i>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
     <section class="home" id="home">
         <div class="home-content">
-        <h1><span class="shine">Stella Sposito</span></h1>
-           <h3>Data Scientist</h3>
+            <h1><span class="shine">Stella Sposito</span></h1>
+            <h3>Data Scientist</h3>
 
-        <div class="typing-container">
-            <span id="typed-text"></span>
-            <span class="cursor">|</span>
-        </div>
-    
-        <script src="script.js"></script>
-           
-           <div class="social-icons">
+            <div class="typing-container">
+                <span id="typed-text"></span>
+                <span class="cursor">|</span>
+            </div>
+        
+            <script src="script.js"></script>
+               
+            <div class="social-icons">
                 <a href="https://www.linkedin.com/in/stellasposito/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/stellasposito" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://github.com/stellasposito" target="_blank"><i class='bx bxl-github'></i></a>
                 <a href="https://www.instagram.com/stellasposito_/" target="_blank"><i class='bx bxl-instagram'></i></a>
             </div>
-
-       
+        </div>
     </section>
 
     <section class="about" id="about">
         <h2 class="heading">About</h2>
-     
-        <div class="about-content">
+    
+        <div class="about-content flex">
             <div class="about-img">
-                <img src="stella.png" alt="">
-            </div>  
-            <p>My name defines a lot of who I am. I like to behave like a star in the solar system: with intensity, brightness and authenticity. I learned to be a Scientist when I graduated in Biology, discovering my critical, researching and questioning side. I learned to be a Data Scientist in my postgraduate studies, where I realized that I could use my scientist side to look at analyses with different eyes, and obtain important information through data.</p>
+                <img src="stella.png" alt="Stella's Image">
+            </div>
+            <div class="about-text">
+                <p>My name defines a lot of who I am. I like to behave like a star in the solar system: with intensity, brightness, and authenticity. I learned to be a Scientist when I graduated in Biology, discovering my critical, researching, and questioning side. I learned to be a Data Scientist in my postgraduate studies, where I realized that I could use my scientist side to look at analyses with different eyes and obtain important information through data.</p>
+            </div>
         </div>
     </section>
 
@@ -76,43 +85,41 @@
                 <img src="ifood.png" alt="Ifood Analysis">
                 <div class="service-info">
                     <h4>
-                        <a href="https://github.com/stellasposito/ifood_analysis" target="_blank">Exploratory Data Analysis
-                    <p>
-                        This project was carried out focusing on Descriptive Statistical Analysis. 
-
-                    </p></a></h4>
+                        <a href="https://github.com/stellasposito/ifood_analysis" target="_blank">Exploratory Data Analysis</a>
+                    </h4>
+                    <p>This project was carried out focusing on Descriptive Statistical Analysis.</p>
                 </div>
             </div>
 
             <div class="service-box">
                 <img src="titanic.png" alt="Titanic">
                 <div class="service-info">
-                    <h4><a href="https://github.com/stellasposito/titanic" target="_blank">EDA with Naive Bayes
-                    <p>
-                        This project was produced focusing on demonstrating the difference between using the Bayes Theorem formula and the Naive Bayes Machine Learning algorithm.
-                    </p></a></h4>
+                    <h4>
+                        <a href="https://github.com/stellasposito/titanic" target="_blank">EDA with Naive Bayes</a>
+                    </h4>
+                    <p>This project was produced focusing on demonstrating the difference between using the Bayes Theorem formula and the Naive Bayes Machine Learning algorithm.</p>
                 </div>
             </div>
 
             <div class="service-box">
                 <img src="enem.png" alt="Enem">
                 <div class="service-info">
-                    <h4><a href="https://github.com/stellasposito/trend-analysis-in-enem-test" target="_blank">
-                        Trend Analysis in Enem Test using NLP
-                    <p>For this project, I used NLP techniques to analyze and classify ENEM questions according to the proximity and occurrence of words in each discipline. </p></a></h4>
+                    <h4>
+                        <a href="https://github.com/stellasposito/trend-analysis-in-enem-test" target="_blank">Trend Analysis in Enem Test using NLP</a>
+                    </h4>
+                    <p>For this project, I used NLP techniques to analyze and classify ENEM questions according to the proximity and occurrence of words in each discipline.</p>
                 </div>
             </div>
 
             <div class="service-box">
                 <img src="wine.png" alt="Wine">
                 <div class="service-info">
-                    <h4><a href="https://github.com/stellasposito/knn_stella" target="_blank">Wine Dataset with KNN
-                    <p>Wine Dataset with KNN Analysis.
-                        
-                    </p></a></h4>
+                    <h4>
+                        <a href="https://github.com/stellasposito/knn_stella" target="_blank">Wine Dataset with KNN</a>
+                    </h4>
+                    <p>Wine Dataset with KNN Analysis.</p>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -130,20 +137,15 @@
         </form>
     </section>
 
-
     <footer class="footer">
         <div class="social">
             <a href="https://www.linkedin.com/in/stellasposito/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/stellasposito" target="_blank"><i class='bx bxl-github' ></i></a>
-                <a href="https://www.instagram.com/stellasposito_/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://github.com/stellasposito" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/stellasposito_/" target="_blank"><i class='bx bxl-instagram'></i></a>
         </div>
 
-        <p class="copyright">
-            ₢ Stella Sposito 
+        <p class="copyright">₢ Stella Sposito</p>
     </footer>
-
-
-
 
     <script src="script.js"></script>
 </body>
