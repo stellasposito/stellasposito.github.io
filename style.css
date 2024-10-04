@@ -504,11 +504,13 @@ section {
     padding-top: 3rem; 
 }
 
-@media screen and (max-width: 767px){
+
+
+@media screen and (max-width: 767px) {
     #menu-icon {
         display: block; /* Mostra o ícone do menu */
     }
-    .about-img img{
+    .about-img img {
         width: 90%;
     }
     .about-content p {
@@ -519,13 +521,13 @@ section {
         text-align: justify;
     }
     .services-container {
-        display: grid; /* Mantenha o grid para a versão mobile */
+        display: grid; /* Mantém o grid para a versão mobile */
         grid-template-columns: 1fr; /* Uma coluna na versão mobile */
         gap: 1.5rem; /* Espaço entre as caixas */
     }
 
     .service-box {
-        height: auto; /* Ajuste a altura ao conteúdo */
+        height: auto; /* Ajusta a altura ao conteúdo */
         border-radius: 1.5rem; /* Bordas arredondadas */
         padding: 1rem; /* Espaço interno */
         position: relative;
@@ -544,34 +546,75 @@ section {
         display: none; /* Remove a exibição da caixa de informações no mobile */
     }
 
-    /* Exibe título e texto sempre */
+    /* Exibe título e texto sempre no mobile */
     .service-box h4 {
+        display: block; /* Exibe o título */
         text-align: center; /* Centraliza o título */
-        font-size: 1.8rem; /* Tamanho do título */
-        margin: 0.5rem 0; /* Espaçamento */
+        font-size: 2.2rem; /* Tamanho do título */
+        margin: 0.2rem 0; /* Espaçamento */
     }
 
     .service-box p {
+        display: block; /* Exibe a descrição */
         text-align: center; /* Centraliza o texto */
-        font-size: 1.4rem; /* Tamanho do texto */
+        font-size: 1.5rem; /* Tamanho do texto */
         margin: 0.5rem 0; /* Espaçamento */
     }
-    
-    /* Remove os efeitos de hover na versão mobile */
-    .service-box:hover {
-        background: none; /* Remove fundo ao passar o mouse */
-        border: none; /* Remove borda ao passar o mouse */
-        transform: none; /* Remove transformação ao passar o mouse */
+
+    .service-box:hover img {
+        transform: none; /* Remove o efeito de zoom na imagem ao passar o mouse */
     }
-    .flex{
+
+    .service-box:hover .service-info {
+        opacity: 1; /* Mantém as informações visíveis, se necessário */
+    }
+
+    .service-box {
+        pointer-events: none; /* Desabilita interações com o hover em dispositivos móveis */
+    }
+    .mobile-title {
+        font-size: 5rem; /* Aumentado para 2.2rem */
+        color: #ff00b3c2; /* Cor principal */
+        text-align: center; /* Centraliza o título */
+        margin-bottom: 0.5rem; /* Espaçamento */
+        text-decoration: none; /* Remove o sublinhado do link */
+    }
+    
+    .mobile-title a {
+        color: #ff00b3c2; /* Define a cor do link */
+        text-decoration: none; /* Remove o sublinhado do link */
+    }
+    
+    .mobile-title a:hover {
+        color: #ff00b3c2; /* Mantém a mesma cor ao passar o mouse */
+    }
+    .mobile-description {
+        font-size: 1.8rem; /* Aumentado para 1.8rem */
+        text-align: center; /* Centraliza a descrição */
+        margin-bottom: 0.5rem; /* Espaçamento */
+    }
+
+    .flex {
         flex-direction: column;
     }
-    .navbar{
-        display: none
+
+    .navbar {
+        display: none;
     }
-    
+
+    /* Mover o título e descrição para fora da imagem na versão mobile */
+    .mobile-title, .mobile-description {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .desktop-title, .desktop-description {
+        display: none; /* Esconder o conteúdo da versão desktop */
+    }
 }
-@media (min-width: 769px) {
+
+@media screen and (min-width: 769px) {
     #menu-icon {
         display: none; /* Oculta o ícone do menu na versão desktop */
     }
@@ -579,10 +622,15 @@ section {
     .navbar {
         display: block; /* Mostra a navbar na versão desktop */
     }
-}
-/* Esconde o ícone do menu quando o menu está ativo */
-.menu-mobile.active ~ #menu-icon {
-    display: none; /* Esconde o ícone de menu quando o menu está aberto */
+
+    /* Mostrar apenas o conteúdo da versão desktop */
+    .mobile-title, .mobile-description {
+        display: none;
+    }
+
+    .desktop-title, .desktop-description {
+        display: block;
+    }
 }
 
 /* Estilo para o menu mobile */
@@ -590,7 +638,6 @@ section {
     display: none; /* Inicialmente escondido */
 }
 
-/* Estilo quando o menu está ativo */
 .menu-mobile.active {
     display: block; /* Mostra o menu quando ativo */
     position: fixed; /* Fica fixo na tela */
@@ -604,7 +651,6 @@ section {
     padding: 20px; /* Espaçamento interno */
 }
 
-/* Estilo para o botão de fechar */
 .btn-fechar {
     cursor: pointer; /* Indica que é clicável */
     font-size: 24px; /* Tamanho do ícone de fechar */
@@ -626,4 +672,6 @@ section {
     color: white; /* Cor do texto */
     font-size: 20px; /* Tamanho da fonte */
 }
+
+
 
