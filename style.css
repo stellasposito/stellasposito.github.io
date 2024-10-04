@@ -532,7 +532,7 @@ section {
         padding: 1rem; /* Espaço interno */
         position: relative;
         transition: none; /* Remove transições */
-        pointer-events: auto;
+        pointer-events: none;
     }
 
     .service-box img {
@@ -553,7 +553,6 @@ section {
         text-align: center; /* Centraliza o título */
         font-size: 2.2rem; /* Tamanho do título */
         margin: 0.2rem 0; /* Espaçamento */
-        pointer-events: auto;
     }
 
     .service-box p {
@@ -574,7 +573,7 @@ section {
     }
 
     .service-box {
-        pointer-events: auto;
+        pointer-events: none;
     }
     .service-box:hover {
         pointer-events: none;
@@ -586,6 +585,7 @@ section {
         text-align: center; /* Centraliza o título */
         margin-bottom: 0.5rem; /* Espaçamento */
         text-decoration: none; /* Remove o sublinhado do link */
+        pointer-events: auto;
     }
     
     .mobile-title a {

@@ -67,3 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', fecharMenu); // Fecha o menu ao clicar em qualquer link
     });
 });
+document.querySelectorAll('.mobile-title a').forEach(function(link) {
+    link.addEventListener('click', function(event) {
+        window.open(link.href, '_blank');
+    });
+});
