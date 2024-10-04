@@ -532,6 +532,7 @@ section {
         padding: 1rem; /* Espaço interno */
         position: relative;
         transition: none; /* Remove transições */
+        pointer-events: none;
     }
 
     .service-box img {
@@ -563,15 +564,21 @@ section {
 
     .service-box:hover img {
         transform: none; /* Remove o efeito de zoom na imagem ao passar o mouse */
+        pointer-events: none;
     }
 
     .service-box:hover .service-info {
         opacity: 1; /* Mantém as informações visíveis, se necessário */
+        
     }
 
     .service-box {
         pointer-events: none; /* Desabilita interações com o hover em dispositivos móveis */
     }
+    .service-box:hover {
+        pointer-events: none;
+    }
+    
     .mobile-title {
         font-size: 5rem; /* Aumentado para 2.2rem */
         color: #ff00b3c2; /* Cor principal */
@@ -583,6 +590,7 @@ section {
     .mobile-title a {
         color: #ff00b3c2; /* Define a cor do link */
         text-decoration: none; /* Remove o sublinhado do link */
+        pointer-events: auto;
     }
     
     .mobile-title a:hover {
