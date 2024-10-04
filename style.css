@@ -532,7 +532,7 @@ section {
         padding: 1rem; /* Espaço interno */
         position: relative;
         transition: none; /* Remove transições */
-        pointer-events: none;
+        pointer-events: auto;
     }
 
     .service-box img {
@@ -553,6 +553,7 @@ section {
         text-align: center; /* Centraliza o título */
         font-size: 2.2rem; /* Tamanho do título */
         margin: 0.2rem 0; /* Espaçamento */
+        pointer-events: auto;
     }
 
     .service-box p {
@@ -573,12 +574,12 @@ section {
     }
 
     .service-box {
-        pointer-events: none; /* Desabilita interações com o hover em dispositivos móveis */
+        pointer-events: auto;
     }
     .service-box:hover {
         pointer-events: none;
     }
-    
+
     .mobile-title {
         font-size: 5rem; /* Aumentado para 2.2rem */
         color: #ff00b3c2; /* Cor principal */
