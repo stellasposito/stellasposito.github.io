@@ -190,12 +190,12 @@ span{
     margin: 1rem;
     transition: 0.3s ease-in-out;
 }
-.social-icons a:hover{
-   color: var(--text-color);
-   transform: scale(1.3)translateY(-5px);
-   box-shadow: 0 0 25px var(--main-color);
-   background-color: var(--main-color);
-}
+.social-icons a:hover {
+    color: var(--text-color);
+    transform: scale(1.3) translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+ }
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -210,8 +210,8 @@ span{
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
-.btn:hover{
-    transform:scale(1.05);
+.btn:hover {
+    transform: scale(1.05);
     box-shadow: 0 0 50px var(--main-color);
 }
 .btn-group{
@@ -263,108 +263,128 @@ span{
     background-color: var(--bg-color);
     width: 40px;
 }
-.services{
-    background: var(--bg-color);
-    color: #5c595b;
+
+@media (hover: hover){
+    .services{
+        background: var(--bg-color);
+        color: #5c595b;
+    }
+    .services h2{
+        margin-bottom: 5rem;
+        color: black;
+    }
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 2.5rem;
+    }
+    .service-box {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 3rem;
+        border: 5px solid transparent;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+    .service-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.4s ease-in-out;
+    }
+    .service-box:hover {
+        background: #2c2c2c;
+        color: var(--main-color);
+        border: 5px solid var(--main-color);
+        transform: scale(1.03);
+    }
+    .service-box .service-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+        text-align: center;
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+    /* Estilos gerais para títulos */
+    h4 {
+        font-weight: 800;
+        line-height: 2;
+        text-align: center;
+        margin-bottom: 1rem; /* Ajusta o espaçamento inferior */
+    }
+    
+    /* Estilo específico para h4 dentro de .service-info */
+    .service-info h4 {
+        font-size: 2rem; /* Ajuste o tamanho da fonte */
+        color: var(--main-color);
+    }
+    
+    .service-box h4 {
+        font-size: 3rem; /* Tamanho maior para o título na caixa de serviço */
+        color: var(--main-color);
+    }
+    
+    /* Estilo para parágrafo dentro da caixa de serviço */
+    .service-box h4 p {
+        font-size: 1.5rem;
+        font-weight: normal;
+        line-height: 2;
+        color: white;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    /* Estilo para links */
+    .service-info h4 a,
+    .service-box h4 a {
+        color: white; /* Define a cor padrão para os links */
+        text-decoration: none; /* Remove o sublinhado */
+        transition: color 0.3s ease-in-out; /* Transição suave */
+    }
+    
+    .service-info h4 a:visited {
+        color: var(--main-color); /* Mantém a cor principal após visita */
+    }
+    
+    .service-info h4 a:active,
+    .service-box h4 a:active {
+        color: white; /* Muda para branco ao clicar */
+    }
+    
+    .service-info h4 a:hover,
+    .service-box h4 a:hover {
+        color: var(--main-color); /* Cor ao passar o mouse */
+    }
+    
+    /* Estilos para informações e efeito de hover */
+    .service-info p {
+        font-size: 1.4rem;
+        font-weight: normal;
+    }
+    
+    .service-box:hover img {
+        transform: scale(1.1); /* Efeito de zoom na imagem ao passar o mouse */
+    }
+    
+    .service-box:hover .service-info {
+        opacity: 1; /* Exibe as informações ao passar o mouse */
+    }
 }
-.services h2{
-    margin-bottom: 5rem;
-    color: black;
-}
-.services-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    gap: 2.5rem;
-}
-.service-box {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 3rem;
-    border: 5px solid transparent;
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
-}
-.service-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.4s ease-in-out;
-}
-.service-box:hover{
-    background: #2c2c2c;
-    color: var(--main-color);
-    border: 5px solid var(--main-color);
-    transform: scale(1.03);
-}
-.service-box .service-info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    text-align: center;
-    padding: 2rem;
-    box-sizing: border-box;
-}
-.service-info h4 a {
-    color: white; /* Define a cor principal para o título do projeto */
-    text-decoration: none; /* Remove o sublinhado padrão */
-    transition: color 0.3s ease-in-out;
-}
-.service-info h4 {
-    font-size: 2rem; /* Ajuste o tamanho da fonte para garantir que todos os títulos tenham o mesmo tamanho */
-    font-weight: 800;
-    line-height: 2;
-    color: var(--main-color);
-    text-align: center; /* Opcional: centraliza o texto */
-    margin-bottom: 1rem; /* Ajusta o espaçamento inferior */
-}
-.service-box h4 {
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 2;
-    color: var(--main-color);
-    text-align: center;
-    margin-bottom: 1rem;
-}
-.service-box h4 p{
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 2;
-    color: white;
-    text-align: center;
-    margin-bottom: 1rem;
-} 
-.service-info h4 a:visited {
-    color: var(--main-color); /* Mantém a cor principal mesmo após visitar o link */
-}
-.service-info h4 a:active {
-    color: white; /* Muda para branco ao clicar */
-}
-.service-info h4 a:hover {
-    color: var(--main-color); /* Opcional: pode também mudar para branco ao passar o mouse */
-}
-.service-info p {
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-.service-box:hover img {
-    transform: scale(1.1); /* Efeito de zoom na imagem ao passar o mouse */
-}
-.service-box:hover .service-info {
-    opacity: 1; /* Exibe as informações do projeto ao passar o mouse */
-}
+
 .contact {
     background-color: var(--second-bg-color);
 }
@@ -504,15 +524,20 @@ section {
     padding-top: 3rem; 
 }
 
-
-
 @media screen and (max-width: 767px) {
     #menu-icon {
         display: block; /* Mostra o ícone do menu */
     }
+
+    .home { /* Substitua pelo seletor correto da sua imagem de fundo */
+        background-attachment: fixed; /* Mantém o fundo fixo */
+        background-size: cover; /* Cobre toda a área */
+    }
+
     .about-img img {
         width: 90%;
     }
+
     .about-content p {
         margin-bottom: 2rem;
         margin-top: 1rem;
@@ -520,6 +545,7 @@ section {
         font-weight: 300;
         text-align: justify;
     }
+
     .services-container {
         display: grid; /* Mantém o grid para a versão mobile */
         grid-template-columns: 1fr; /* Uma coluna na versão mobile */
@@ -532,7 +558,7 @@ section {
         padding: 1rem; /* Espaço interno */
         position: relative;
         transition: none; /* Remove transições */
-        pointer-events: none;
+        pointer-events: none; /* Desabilita interações */
     }
 
     .service-box img {
@@ -540,6 +566,7 @@ section {
         height: auto; /* Altura ajusta automaticamente */
         border-radius: 1.5rem; /* Bordas arredondadas para as imagens */
         object-fit: cover; /* Cobre o espaço disponível */
+        pointer-events: none; /* Desabilita hover na imagem */
     }
 
     /* Remover informações de serviço ao passar o mouse */
@@ -560,60 +587,55 @@ section {
         text-align: center; /* Centraliza o texto */
         font-size: 1.5rem; /* Tamanho do texto */
         margin: 0.5rem 0; /* Espaçamento */
-    }
-
-    .service-box:hover img {
-        transform: none; /* Remove o efeito de zoom na imagem ao passar o mouse */
-        pointer-events: none;
-    }
-
-    .service-box:hover .service-info {
-        opacity: 1; /* Mantém as informações visíveis, se necessário */
-        
-    }
-
-    .service-box {
-        pointer-events: none;
-    }
-    .service-box:hover {
-        pointer-events: none;
+        text-align: justify;
     }
 
     .mobile-title {
-        font-size: 5rem; /* Aumentado para 2.2rem */
+        font-size: 5rem; /* Aumentado para 5rem */
         color: #ff00b3c2; /* Cor principal */
         text-align: center; /* Centraliza o título */
         margin-bottom: 0.5rem; /* Espaçamento */
         text-decoration: none; /* Remove o sublinhado do link */
-        pointer-events: auto;
+        display: block; /* Garante que esteja visível */
     }
-    
+
     .mobile-title a {
-        color: #ff00b3c2; /* Define a cor do link */
+        color: #ff00b3c2 !important; /* Define a cor do link */
         text-decoration: none; /* Remove o sublinhado do link */
-        pointer-events: auto;
     }
-    
-    .mobile-title a:hover {
-        color: #ff00b3c2; /* Mantém a mesma cor ao passar o mouse */
-    }
+
     .mobile-description {
         font-size: 1.8rem; /* Aumentado para 1.8rem */
         text-align: center; /* Centraliza a descrição */
         margin-bottom: 0.5rem; /* Espaçamento */
+        display: block; /* Garante que esteja visível */
+    }
+
+    .more-info {
+        font-size: 4rem; /* Aumentado para 4rem */
+        text-align: center; /* Centraliza o texto */
+        margin-top: 1rem; /* Espaçamento acima */
+        color: #ff00b3c2 !important; /* Cor do texto */
+        text-decoration: none; /* Remove sublinhado do link */
+        pointer-events: auto; /* Habilita eventos para o link */
+        display: block;
+    }
+
+    .more-info a{
+        color: var(--main-color);
     }
 
     .flex {
-        flex-direction: column;
+        display: flex; /* Garante que o flex funcione */
+        flex-direction: column; /* Direção da coluna */
     }
 
     .navbar {
-        display: none;
+        display: none; /* Esconde a navbar na versão mobile */
     }
 
     /* Mover o título e descrição para fora da imagem na versão mobile */
     .mobile-title, .mobile-description {
-        display: block;
         text-align: center;
         margin-bottom: 0.5rem;
     }
@@ -623,11 +645,47 @@ section {
     }
 }
 
-@media screen and (min-width: 769px) {
+
+@media screen and (min-width: 768px) {
     #menu-icon {
         display: none; /* Oculta o ícone do menu na versão desktop */
     }
+    .logo:hover {
+        transform: scale(1.1);
+    }
 
+    .navbar a:hover,
+    .navbar a:active {
+        color: var(--main-color);
+        border-bottom: 3px solid var(--main-color);
+    }
+
+    .social-icons a:hover {
+        color: var(--text-color);
+        transform: scale(1.3) translateY(-5px);
+        box-shadow: 0 0 25px var(--main-color);
+        background-color: var(--main-color);
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 50px var(--main-color);
+    }
+
+    .service-box:hover {
+        background: #2c2c2c;
+        color: var(--main-color);
+        border: 5px solid var(--main-color);
+        transform: scale(1.03);
+    }
+
+    .service-box:hover img {
+        transform: scale(1.1);
+    }
+
+    .service-box:hover .service-info {
+        opacity: 1;
+    }
     .navbar {
         display: block; /* Mostra a navbar na versão desktop */
     }
@@ -681,6 +739,11 @@ section {
     color: white; /* Cor do texto */
     font-size: 20px; /* Tamanho da fonte */
 }
+
+
+
+
+
 
 
 
