@@ -253,6 +253,61 @@ span{
     text-align: center;
     margin-bottom: 2rem;
 }
+.publications{
+    padding: 100px 15px;
+    background: var(--second-bg-color);
+}
+.publications h2{
+    margin-bottom: 5rem;
+}
+.timeline-items{
+    display: flex;
+    flex-direction: column; /* Faz as caixas ficarem uma abaixo da outra */
+    align-items: center;    /* Centraliza as caixas horizontalmente */
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.timeline-items ::before{
+    content: none;
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+}
+.timeline-item{
+    margin-bottom: 60px;
+    width: 100%;
+    position: relative;
+}
+.timeline-item:nth-child(odd),
+.timeline-item:nth-child(even){
+    padding: 0; /* Remove padding lateral */
+    text-align: center; /* Centraliza o conteúdo dentro de cada caixa */
+}
+.timeline-content{
+    text-align: center; /* Centraliza o texto dentro da caixa */
+    margin: 0 auto;     /* Centraliza a própria caixa se ela tiver largura fixa */
+    padding: 30px 50px;
+    background-color: var(--bg-color);
+    border: 3px solid var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 10px var(--main-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.timeline-content h3{
+    font-size: 20px;
+    color: #ff00c8e0;
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+.timeline-content p{
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -529,10 +584,6 @@ section {
         display: block; /* Mostra o ícone do menu */
     }
 
-    .home { /* Substitua pelo seletor correto da sua imagem de fundo */
-        background-attachment:fixed; 
-    }
-
     .about-img img {
         width: 90%;
     }
@@ -711,7 +762,7 @@ section {
     right: 0; /* Alinha à direita */
     width: 300px; /* Largura do menu */
     height: 100%; /* Ocupa a tela toda */
-    background-color: rgba(26, 25, 25, 0.5); /* Mantém a camada de transparência */
+    background-color: rgba(27, 26, 26, 0.753); /* Mantém a camada de transparência */
     color: white; /* Cor do texto */
     z-index: 1000; /* Fica na frente de outros elementos */
     padding: 20px; /* Espaçamento interno */
