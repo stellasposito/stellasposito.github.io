@@ -704,7 +704,7 @@ section {
         transform: scale(1.1);
     }
     .home {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)), url('stars.png'); /* Gradiente + Imagem */
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)), url('starsmobile.png'); /* Gradiente + Imagem */
         background-size: cover;
         background-position: center;
         position: relative;
@@ -756,7 +756,6 @@ section {
         display: block;
     }
 }
-
 /* Estilo para o menu mobile */
 .menu-mobile {
     display: none; /* Inicialmente escondido */
@@ -772,7 +771,7 @@ section {
     background-color: rgba(27, 26, 26, 0.753); /* Mantém a camada de transparência */
     color: white; /* Cor do texto */
     z-index: 1000; /* Fica na frente de outros elementos */
-    padding: 20px; /* Espaçamento interno */
+    padding: 20px; /* Mantenha o padding existente */
 }
 
 .btn-fechar {
