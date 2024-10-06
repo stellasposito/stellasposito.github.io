@@ -585,10 +585,8 @@ section {
     }
 
     .home {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)), url('stars3.png'); /* Gradiente + Imagem */
-    }
-    .header {
-        background: rgba(29, 21, 21, 0.322); /* Fundo preto com 50% de transparência */
+        background-image: none;
+        background-color: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)); /* Gradiente + Imagem */
     }
 
     .about-img img {
