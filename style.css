@@ -705,7 +705,7 @@ section {
     }
     .home {
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)), url('starsmobile.png'); /* Gradiente + Imagem */
-        background-size: cover;
+        background-size: auto;
         background-position: center;
         position: relative;
         background-attachment: fixed;
