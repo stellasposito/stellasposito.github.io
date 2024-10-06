@@ -587,14 +587,6 @@ section {
     .about-img img {
         width: 90%;
     }
-    .home {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)), url('starsmobile.png'); /* Gradiente + Imagem */
-        background-size: auto;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-    }
-
     .about-content p {
         margin-bottom: 2rem;
         margin-top: 1rem;
@@ -709,14 +701,6 @@ section {
     }
     .logo:hover {
         transform: scale(1.1);
-    }
-    .home {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)), url('stars.png'); /* Gradiente + Imagem */
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        background-attachment: fixed;
-        padding: 8rem 12% 10rem;
     }
     .navbar a:hover,
     .navbar a:active {
