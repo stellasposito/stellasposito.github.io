@@ -585,8 +585,9 @@ section {
     }
 
     .body {
-        background-image: url('stars.png');
-        background-size: 100% auto;
+        background-image: linear-gradient(80deg, #000000 20%, #F2295B00 80%), url('stars.png');
+        opacity: 0.79;
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
     }
 
     .about-img img {
