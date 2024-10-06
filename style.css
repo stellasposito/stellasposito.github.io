@@ -584,10 +584,11 @@ section {
         display: block; /* Mostra o ícone do menu */
     }
 
-    .body {
-        background-image: linear-gradient(80deg, #000000 20%, #F2295B00 80%), url('stars.png');
-        opacity: 0.79;
-        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    .home {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)), url('stars3.png'); /* Gradiente + Imagem */
+    }
+    .header {
+        background: rgba(29, 21, 21, 0.322); /* Fundo preto com 50% de transparência */
     }
 
     .about-img img {
