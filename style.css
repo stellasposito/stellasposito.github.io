@@ -704,12 +704,13 @@ section {
         transform: scale(1.1);
     }
     .home {
-        background-image: url('stars.png'); /* Use uma imagem específica para mobile, se necessário */
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)), url('stars.png'); /* Gradiente + Imagem */
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
+        position: relative;
+        background-attachment: fixed;
+        padding: 8rem 12% 10rem;
     }
-
     .navbar a:hover,
     .navbar a:active {
         color: var(--main-color);
