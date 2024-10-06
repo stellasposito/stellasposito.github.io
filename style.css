@@ -703,6 +703,12 @@ section {
     .logo:hover {
         transform: scale(1.1);
     }
+    .home {
+        background-image: url('stars.png'); /* Use uma imagem específica para mobile, se necessário */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
     .navbar a:hover,
     .navbar a:active {
