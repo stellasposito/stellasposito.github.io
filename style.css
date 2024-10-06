@@ -530,8 +530,7 @@ section {
     }
 
     .home { /* Substitua pelo seletor correto da sua imagem de fundo */
-        background-attachment: fixed; /* Mantém o fundo fixo */
-        background-size: cover; /* Cobre toda a área */
+        background-attachment:fixed; 
     }
 
     .about-img img {
