@@ -585,9 +585,12 @@ section {
     }
 
     .home {
-        background-image: none;
-        background-color: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)); /* Gradiente + Imagem */
-    }
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)), url('stars.png'); /* Gradiente + Imagem */
+        max-width: 100%;
+        width: 500px;
+        object-fit: cover;
+        object-position: bottom;  
+        }
 
     .about-img img {
         width: 90%;
