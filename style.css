@@ -584,7 +584,7 @@ section {
         display: block; /* Mostra o ícone do menu */
     }
 
-    .home {
+    .home img {
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)), url('stars.png'); /* Gradiente + Imagem */
         max-width: 100%;
         width: 500px;
