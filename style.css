@@ -253,12 +253,15 @@ span{
     text-align: center;
     margin-bottom: 2rem;
 }
-.publications{
-    padding: 100px 15px;
+.publications {
+    padding: 2rem 15px; /* Alinha o padding ao da seção about */
     background: var(--second-bg-color);
 }
-.publications h2{
-    margin-bottom: 5rem;
+.publications h2 {
+    margin-bottom: 2rem !important;
+    margin-top: 0 !important; /* Reduz a margem superior */
+    font-size: 3rem; /* Ajuste o tamanho da fonte para corresponder ao about */
+    font-weight: bold; /* Ajuste o peso da fonte para corresponder ao about */
 }
 .timeline-items{
     display: flex;
@@ -579,18 +582,14 @@ section {
     padding-top: 3rem; 
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px){
+    body.home img {
+        height: auto!important;;
+        width: auto!important; 
+    }
     #menu-icon {
         display: block; /* Mostra o ícone do menu */
     }
-
-    .home img {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)), url('stars.png'); /* Gradiente + Imagem */
-        max-width: 100%;
-        width: 500px;
-        object-fit: cover;
-        object-position: bottom;  
-        }
 
     .about-img img {
         width: 90%;
@@ -701,7 +700,6 @@ section {
         display: none; /* Esconder o conteúdo da versão desktop */
     }
 }
-
 
 @media screen and (min-width: 768px) {
     #menu-icon {
