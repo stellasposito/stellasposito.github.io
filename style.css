@@ -583,7 +583,7 @@ section {
 }
 
 @media only screen and (max-width: 767px){
-    body.home img {
+    .home img {
         height: auto!important;;
         width: auto!important; 
     }
