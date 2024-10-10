@@ -586,8 +586,7 @@ section {
     .home {
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)), url('stars.png'); 
         background-size: contain; /* Faz a imagem se ajustar ao container sem cortar */
-        background-position: center; /* Centraliza a imagem */
-        background-repeat: no-repeat; /* Evita a repetição da imagem */
+        background-position: center; /* Centraliza a imagem */ /* Evita a repetição da imagem */
         background-attachment: scroll; /* A imagem se move conforme o scroll */
         image-rendering: crisp-edges;
     }
