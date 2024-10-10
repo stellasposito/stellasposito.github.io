@@ -584,11 +584,12 @@ section {
 
 @media screen and (max-width: 767px) {
     .home {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)), url('stars.png'); /* Gradiente + Imagem */
-        background-size: cover; /* Garante que a imagem cubra toda a área */
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--second-bg-color)), url('stars.png'); 
+        background-size: contain; /* Faz a imagem se ajustar ao container sem cortar */
         background-position: center; /* Centraliza a imagem */
-        background-repeat: no-repeat; /* Impede que a imagem se repita */
-        background-attachment: fixed; /* Mantém a imagem fixa ao rolar */
+        background-repeat: no-repeat; /* Evita a repetição da imagem */
+        background-attachment: scroll; /* A imagem se move conforme o scroll */
+        image-rendering: crisp-edges;
     }
     #menu-icon {
         display: block; /* Mostra o ícone do menu */
